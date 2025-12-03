@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diviseur de tension</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Module/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Site Web Calculateur sinusoïdal</h1>
+        </div>
+        <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Rechercher un mot-clé...">
+                <button onclick="searchKeyword()">Rechercher</button>
+            </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Ouvrir le menu de navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="./HTML/Calculateur.html">Le Convertisseur</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="intro-section">
+            <h1>Bienvenue sur le site calculateur sinusoïdal</h1>
+            <div class="call-to-action">
+                <a href="./index.html" class="button primary-button">Accueil</a>
+                <a href="./HTML/Calculateur.html" class="button secondary-button">Calculateur</a>
+            </div>
+        </section>
+<section class="intro-section">
+    <h2>Mini‑cours : Calculs sinusoïdaux</h2>
+
+    <section aria-labelledby="def">
+      <h2 id="def">1. Définition d’une sinusoïde</h2>
+      <p>Un signal sinusoïdal est une fonction périodique décrite par son amplitude, sa pulsation et sa phase :</p>
+      <div class="formula">u(t) = Umax · sin(ω · t + φ)</div>
+      <ul>
+        <li><b>Umax</b> : amplitude maximale (valeur crête)</li>
+        <li><b>ω</b> : pulsation (rad/s)</li>
+        <li><b>φ</b> : phase initiale (rad)</li>
+        <li><b>t</b> : temps (s)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="relations">
+      <h2 id="relations">2. Relations fondamentales</h2>
+      <ul>
+        <li><b>Pulsation ↔ Fréquence</b>
+          <div class="formula">ω = 2π · f  ⇔  f = ω / (2π)</div>
+        </li>
+        <li><b>Période</b>
+          <div class="formula">T = 1 / f</div>
+        </li>
+        <li><b>Valeur efficace (RMS)</b>
+          <div class="formula">Ueff = Umax / √2</div>
+        </li>
+      </ul>
+      <p class="note">La valeur efficace correspond au niveau DC équivalent pour la même puissance dissipée sur une résistance.</p>
+    </section>
+
+    <section aria-labelledby="graph">
+      <h2 id="graph">3. Caractéristiques graphiques</h2>
+      <ul>
+        <li><b>Amplitude</b> : la courbe oscille entre −Umax et +Umax.</li>
+        <li><b>Période T</b> : un cycle complet de la sinusoïde.</li>
+        <li><b>Phase φ</b> : décale la courbe dans le temps (déphasage).</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="ex">
+      <h2 id="ex">4. Exemple chiffré</h2>
+      <p>Avec Umax = 10 V, ω = 2π · 50 rad/s, φ = 0 :</p>
+      <div class="example">
+        <div class="card"><b>Fréquence</b><br />f = 50 Hz</div>
+        <div class="card"><b>Période</b><br />T = 0,02 s</div>
+        <div class="card"><b>Valeur efficace</b><br />Ueff ≈ 7,07 V</div>
+        <div class="card"><b>Signal</b><br /><code>u(t) = 10 · sin(2π · 50 · t)</code></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="apps">
+      <h2 id="apps">5. Applications</h2>
+      <ul>
+        <li><b>Électricité</b> : tension et courant alternatifs (AC).</li>
+        <li><b>Audio</b> : signaux sonores et synthèse.</li>
+        <li><b>Télécoms</b> : modulation et transmission.</li>
+        <li><b>Physique</b> : oscillations mécaniques, ondes.</li>
+      </ul>
+       </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-section about-us">
+                <h3>À Propos de Nous</h3>
+                <p>Ce projet a pour but de présenter les ponts diviseur de tension et de proposer un convertisseur et un simulateur</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./HTML/Calculateur.html">Le Convertisseur</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact</h3>
+                <p>Des questions ou suggestions? Contactez-nous à: <a href="mailto:contact@audeladumonde.com">julienda.david0210@gmail.com</a></p>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <details class="glossaire">
+                <summary>Glossaire</summary>
+                <div class="glossaire-content">
+            </details>
+            <p class="copyright">&copy; 2025 Projet Calculateur sinusoïdal. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="./Module/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur de Signal Sinusoïdal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Module/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Calculateur de Signal Sinusoïdal</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Rechercher un mot-clé...">
+            <button onclick="searchKeyword()">Rechercher</button>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Ouvrir le menu de navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="./Calculateur.html">Calculateur Sinusoïdal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="intro-section">
+            <h1 class="page-title">Calculateur de Paramètres Sinusoïdaux</h1>
+            <p>Entrez l'amplitude et la pulsation du signal pour calculer la fréquence, la période et la valeur efficace.</p>
+        <div class="converter-box">
+                <h3>Calculateur Sinusoïdal</h3>
+            <div class="input-group">
+                <label for="umax">Umax (V)</label>
+                <input type="number" id="umax" class="data-input" placeholder="Amplitude maximale">
+            </div>
+             <div class="input-group">
+                <label for="omega">ω (rad/s)</label>
+                <input type="number" id="omega" class="data-input" placeholder="Pulsation">
+            </div>
+            <div class="input-group">
+                <label for="phi">φ (rad)</label>
+                <input type="number" id="phi" class="data-input" placeholder="Phase">
+            </div>
+            <button class="primary-button" onclick="calculer()">Calculer</button>
+            <div id="result" class="result-display"></div>
+            <canvas id="graph" width="500" height="250"></canvas>
+        </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-section about-us">
+                <h3>À Propos de Nous</h3>
+                <p>Ce projet a pour but de présenter les Formules de calcule sinusoïdal</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="./Calculateur.html">Calculateur Sinusoïdal</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact</h3>
+                <p>Des questions ou suggestions? Contactez-nous à: <a href="mailto:contact@audeladumonde.com">julienda.david0210@gmail.com</a></p>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <details class="glossaire">
+                <summary>Glossaire</summary>
+                <div class="glossaire-content">
+            </details>
+            <p class="copyright">&copy; 2025 Projet Calculateur. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../Module/script.js"></script>
+    <script src="../Module/calculateur.js"></script>
+</body>
+</html>
